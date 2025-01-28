@@ -57,7 +57,7 @@ public class MobileContactDAOImpl implements IMobileContactDAO{
     }
 
     @Override
-    public boolean phoneNumber(String phoneNumber) {
+    public boolean phoneNumberExists(String phoneNumber) {
         int position = getIndexByPhoneNumber(phoneNumber);
         return position != -1;
     }
