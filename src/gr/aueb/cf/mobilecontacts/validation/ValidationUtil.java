@@ -20,12 +20,12 @@ public class ValidationUtil {
         return errorResponse;
     }
 
-    public static String validateDTO(MobileContactUpdateDTO insertDTO) {
+    public static String validateDTO(MobileContactUpdateDTO updateDTO) {
         String errorResponse = "";
 
-        if (insertDTO.getPhoneNumber().length() <= 5) errorResponse += "Ο τηλ. Αριθμός πρέπει να έχει περισσότερα από πέντε σύμβολα.\n";
-        if (insertDTO.getFirstname().length() < 2) errorResponse += "To όνομα πρέπει να περιέχει δύο ή περισσότερους χαρακτήρες.\n";
-        if (insertDTO.getLastname().length() < 2) errorResponse += "To επώνυμο πρέπει να περιέχει δύο ή περισσότερους χαρακτήρες.\n";
+        if (updateDTO.getPhoneNumber().length() <= 5) errorResponse += "Ο τηλ. Αριθμός πρέπει να έχει περισσότερα από πέντε σύμβολα.\n";
+        if (updateDTO.getFirstname().length() < 2) errorResponse += "To όνομα πρέπει να περιέχει δύο ή περισσότερους χαρακτήρες.\n";
+        if (updateDTO.getLastname().length() < 2) errorResponse += "To επώνυμο πρέπει να περιέχει δύο ή περισσότερους χαρακτήρες.\n";
 
         return errorResponse;
     }

@@ -1,4 +1,4 @@
-package gr.aueb.cf.mobilecontacts.model.dao;
+package gr.aueb.cf.mobilecontacts.dao;
 
 import gr.aueb.cf.mobilecontacts.model.MobileContact;
 
